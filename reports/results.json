@@ -1,0 +1,56 @@
+{
+  "units": "mm",
+  "case_description": "Hypothetical axial clearance: housing span minus bearing width and spacer thickness.",
+  "result_name": "Axial clearance",
+  "components": [
+    {
+      "name": "Housing span",
+      "nominal_mm": 35.0,
+      "tolerance_mm": 0.08,
+      "direction": 1
+    },
+    {
+      "name": "Bearing width",
+      "nominal_mm": 10.0,
+      "tolerance_mm": 0.02,
+      "direction": -1
+    },
+    {
+      "name": "Spacer thickness",
+      "nominal_mm": 24.9,
+      "tolerance_mm": 0.03,
+      "direction": -1
+    }
+  ],
+  "specification": {
+    "lsl_mm": 0.0,
+    "usl_mm": 0.2
+  },
+  "stackup": {
+    "nominal_mm": 0.10000000000000142,
+    "worst_case_tolerance_mm": 0.13,
+    "worst_case_min_mm": -0.029999999999998583,
+    "worst_case_max_mm": 0.23000000000000143,
+    "rss_tolerance_mm": 0.08774964387392122
+  },
+  "monte_carlo": {
+    "count": 100000,
+    "seed": 20260925,
+    "mean_mm": 0.0999841907451493,
+    "standard_deviation_mm": 0.02932044775786589,
+    "minimum_mm": -0.03595185761461295,
+    "maximum_mm": 0.2300702183132941,
+    "in_spec_count": 99945,
+    "out_of_spec_count": 55,
+    "in_spec_percent": 99.945,
+    "out_of_spec_percent": 0.055,
+    "cp": 1.1368630386754888,
+    "cpk": 1.1366833091004012
+  },
+  "distribution_assumption": "independent normal components; each bilateral tolerance is \u00b13\u03c3",
+  "software_versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  }
+}

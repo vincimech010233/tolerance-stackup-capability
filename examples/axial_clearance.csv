@@ -1,0 +1,4 @@
+component,nominal_mm,tolerance_mm,direction
+Housing span,35.00,0.08,1
+Bearing width,10.00,0.02,-1
+Spacer thickness,24.90,0.03,-1
